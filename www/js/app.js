@@ -65,7 +65,7 @@ window.addEventListener('load', function() {
             url: '/modal_info_navona',
             template: 'views/modal_info_navona.html',
             controller: 'modal_info_navona'
-        }
+        }});
     /*Asign view start*/
     $JSView
         .initView('inici');
