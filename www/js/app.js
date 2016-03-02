@@ -1,10 +1,11 @@
 window.addEventListener('load', function() {
+    
     /*	
 			Declare views
 	
 			Aquí podem afegir diferents pàgines html , indicar on estan i el nom del controller ( mirar controller.js )
 	
-	*/
+    */
     $JSView.declareView({ 
         inici: {
             url: '/inici',
@@ -40,6 +41,11 @@ window.addEventListener('load', function() {
             url: '/divendres',
             template: 'views/divendres.html',
             controller: 'divendres'
+        },
+        mapes: {
+            url: '/mapes',
+            template: 'views/mapes.html',
+            controller: 'mapes'
         }
     });
      
@@ -55,20 +61,20 @@ window.addEventListener('load', function() {
             template: 'views/modal_info_coliseo.html',
             controller: 'modal_info_coliseo'
         },
+        modal_info_narvona: {
+            url: '/modal_info_narvona',
+            template: 'views/modal_info_narvona.html',
+            controller: 'modal_info_narvona'
+        },
         modal_info_sanpietro: {
             url: '/modal_info_sanpietro',
             template: 'views/modal_info_sanpietro.html',
             controller: 'modal_info_sanpietro'
-        
-        },
-        modal_info_navona: {
-            url: '/modal_info_navona',
-            template: 'views/modal_info_navona.html',
-            controller: 'modal_info_navona'
-        }});
+        }
+    });
+     
     /*Asign view start*/
     $JSView
         .initView('inici');
  
 }, false);
-
