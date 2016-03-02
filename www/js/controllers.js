@@ -4,20 +4,6 @@
 
 $JSView.controller = {
 	
-	/* view  menus */
-	viewMenuA: function(e){
-		$JSView.dataView({'title': 'Welcome'},e)
-	},
-	viewMenuB: function(e){
-        	$JSView.dataView({'title': 'Templates'},e)
-    	},
-    	viewMenuC: function(e){
-    		$JSView.dataView({'title': 'Examples initLoadMore'},e)
-    	},
-    	viewMenuD: function(e){
-    		$JSView.dataView({'title': 'Examples initReload'},e)
-    	},	
-	
 	/* view pàgines */
     	inici: function(e){
 		$JSView.dataView({},e)
@@ -41,26 +27,24 @@ $JSView.controller = {
 		$JSView.dataView({},e)
 	},
 	
-	
-    
+	/* MODALS ROMA DIA 1 */
     	modal_info_aeroport: function(e){
 		$JSView.dataView({},e)	
 	},
-	
-    	modal_info_coliseo: function(e){
+	modal_info_coliseo: function(e){
 		$JSView.dataView({},e)	
 	},
-	
+    	modal_info_narvona: function(e){
+		$JSView.dataView({},e)	
+	},
     	modal_info_sanpietro: function(e){
 		$JSView.dataView({},e)	
 	},
-	
-    	modal_info_navona: function(e){
+    	
+    	/* MAPES */
+	mapes: function(e){
 		$JSView.dataView({},e)	
-	}
-	
 	}
 	
 	
 }
-
